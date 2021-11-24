@@ -1,0 +1,14 @@
+<router-outlet></router-outlet>
+<div *ngIf=!userClicked>
+  <H1>Det her er et eksempel på lazyloading af moduler</H1>
+  <BR>
+  <p>Modulet User-handler bliver lazy loaded fra app-routing-module, i det øjeblik at routen ['userhandler'] bliver kaldt i URL'en</p>
+  <p>Time-series modulet bliver ikke brugt på nuværende tidspunkt, men det kunne bruges til at demonstrere 'nested lazy loading', <br></p>
+  <p>hvor et allerede lazy loaded module lazy loader et andet lazy loaded modul. Komplekst men smart :)</p>
+
+  <p>Herunder kan du vælge at loade enten 'login' eller 'register'. Ingen af komponenterne er implementeret, men viser blot at de er loaded ved klik</p>
+
+  <button style="width: 300px;" (click)="open();">Klik for at åbne User Handleren </button>
+</div>
+
+
